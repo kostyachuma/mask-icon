@@ -1,6 +1,6 @@
 {
   "name": "@desp.pro/mask-icon",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Plugin for creating icons using mask",
   "main": "index.js",
   "scripts": {
