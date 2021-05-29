@@ -1,6 +1,6 @@
 {
   "name": "mask-icon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Plugin for creating icons using mask",
   "main": "index.js",
   "scripts": {
