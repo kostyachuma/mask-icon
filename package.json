@@ -1,6 +1,6 @@
 {
   "name": "@desp.pro/mask-icon",
-  "version": "1.0.9",
+  "version": "1.0.4",
   "description": "Plugin for creating icons using mask",
   "main": "index.js",
   "scripts": {
@@ -49,5 +49,8 @@
     "prettier": "^2.2.0",
     "standard-version": "^9.1.0",
     "tailwindcss": "^2.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
