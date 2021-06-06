@@ -1,11 +1,15 @@
 # mask-icon
 
-> Plugin for creating icons using mask
+> Plugin for creating icons using CSS mask
 
 Install the plugin from npm:
 
 ```
-$ npm install mask-icon
+$ npm install mask-icon -D
+```
+
+```
+$ yarn add mask-icon -D
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
@@ -18,7 +22,9 @@ module.exports = {
     // Optional. Your plugin might not have any options at all.
     maskIcon: {
       // ...
-      YOUR_PLUGIN_CUSTOM_OPTION: true,
+      maskIcon: {
+        'example' :  '../images/example.svg'
+      }
       // ...
     },
   },
@@ -40,12 +46,17 @@ This plugin will generate following CSS:
 
 ```css
 /* ... */
-.example-utility-class {
-  display: block;
-}
-
-.custom-utility-class {
-  background-color: red;
+.mask-icon-example {
+    display: inline-block;
+    background: currentColor;
+    mask-repeat: no-repeat !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-position: center center !important;
+    -webkit-mask-position: center center !important;
+    mask-size: contain !important;
+    -webkit-mask-size: contain !important;
+    mask: url(../images/example.svg);
+    -webkit-mask: url(../images/example.svg);
 }
 /* ... */
 ```
