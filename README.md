@@ -19,25 +19,14 @@ Then add the plugin to your `tailwind.config.js` file:
 module.exports = {
   theme: {
     // ...
-    // Optional. Your plugin might not have any options at all.
     maskIcon: {
-      // ...
-      maskIcon: {
-        'example' :  '../images/example.svg'
-      }
-      // ...
+      'example' :  '../images/example.svg',
     },
   },
-  variants: {
-    // ...
-    // Optional. Your plugin might not have any variants at all.
-    maskIcon: ['responsive'],
-    // ...
-  },
+  variants: {},
   plugins: [
     // ...
-    require('mask-icon'),
-    // ...
+    require('@desp.pro/mask-icon'),
   ],
 };
 ```
